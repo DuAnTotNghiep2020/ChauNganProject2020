@@ -54,6 +54,7 @@ public class frmmain extends javax.swing.JFrame implements ActionListener{
          
     
         initComponents();
+      
         lbltenuser.setText(BLL.BLLlogin.nguoidung.getTenNguoiDung());
         updateTimer = new Timer(DELAY, new ActionListener() {
             @Override
@@ -598,7 +599,8 @@ public class frmmain extends javax.swing.JFrame implements ActionListener{
     }// </editor-fold>//GEN-END:initComponents
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
-      jPanel2.removeAll();
+     
+        jPanel2.removeAll();
         jPanel2.add(tq);
         jPanel2.validate();
        
